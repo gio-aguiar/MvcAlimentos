@@ -14,6 +14,9 @@ namespace AlimentosMvc.Models
         public string Perfil {get; set; }
         public string Email {get; set; }
         public string Token {get; set; }
+
+        public DateTime? DataAcesso {get;set;}
+        
+        public string Username {get; set;} = string.Empty;}
         
     }
-}

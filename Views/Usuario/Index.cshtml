@@ -1,0 +1,30 @@
+@model AlimentosMvc.Models.UsuarioViewModel
+@{
+ViewBag.Title = "Informações do Usuário";
+}
+@if (@TempData["Mensagem"] != null)
+{
+<div class="alert alert-success" role="alert">@TempData["Mensagem"]</div>
+}
+<!--Configuração para exibir mensagem de erro -->
+@if (@TempData["MensagemErro"] != null)
+{
+<div class="alert alert-danger" role="alert">@TempData["MensagemErro"]</div>
+}
+<h2>Detalhes do Usuário</h2>
+<div>
+<hr />
+<dl class="dl-horizontal">
+<dt>@Html.DisplayNameFor(model => model.Id)</dt>
+<dd>@Html.DisplayFor(model => model.Id)</dd>
+<dt>@Html.DisplayNameFor(model => model.Username)</dt>
+<dd>@Html.DisplayFor(model => model.Username)</dd>
+<dt>@Html.DisplayNameFor(model => model.Perfil)</dt>
+<dd>@Html.DisplayFor(model => model.Perfil)</dd>
+<dt>@Html.DisplayNameFor(model => model.Email)</dt>
+<dd>@Html.DisplayFor(model => model.Email)</dd>
+<dt>@Html.DisplayNameFor(model => model.DataAcesso)</dt>
+<dd>@Html.DisplayFor(model => model.DataAcesso)</dd>
+</dl>
+<button onclick="AlterarEmail();" type="button" class="btn btn-primary">Alterar Email</
+button>

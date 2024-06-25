@@ -19,7 +19,7 @@ namespace AlimentosMvc.Controllers
 {
     public class AlimentosController : Controller
     {
-        public string UriBase = "torresssgio.somee.com/AlimentosExemplo/";
+        public string UriBase = "http://torresssgio.somee.com/AlimentosAPI/AlimentosExemplo/";
         
                 [HttpGet]
 
